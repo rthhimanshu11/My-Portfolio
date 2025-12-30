@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+  z-index: 100;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+nav a {
+  margin-left: 1.2rem;
+  text-decoration: none;
+  color: #cbd5f5;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+  padding: 5rem 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-text h2 {
+  color: #38bdf8;
+  margin: 0.5rem 0 1rem;
+}
+
+.hero-buttons {
+  margin-top: 1.5rem;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-center {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.hero-center h1 {
+  font-size: 3.2rem;
+}
+
+.hero-center h2 {
+  color: #38bdf8;
+  margin: 0.8rem 0 1.2rem;
+}
+
+.hero-center p {
+  font-size: 1.05rem;
+  opacity: 0.9;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 0.6rem;
+}
+
+.primary {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.outline {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.small {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 0;
+}
+
+.alt {
+  background: #020617;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* About */
+.about-card {
+  background: #020617;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.skill-card i {
+  font-size: 2.2rem;
+  color: #cbd5f5;
+  margin-bottom: 0.6rem;
+  transition: all 0.35s ease;
+}
+
+.skill-card span {
+  display: block;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+/* 🔥 Hover Effect */
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+}
+
+.skill-card:hover i {
+  color: #38bdf8;
+  transform: rotate(-5deg) scale(1.15);
+}
+
+.skill {
+  background: #020617;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  color: #38bdf8;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.project-card {
+  background: #020617;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #1e293b;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  margin: 0.4rem 0.3rem 0 0;
+  font-size: 0.75rem;
+}
+
+/* Services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: #020617;
+  padding: 1.8rem;
+  border-radius: 10px;
+}
+
+.service-note {
+  margin-top: 1.5rem;
+  opacity: 0.8;
+}
+
+/* Contact */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: #fff;
+  border-radius: 6px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #020617;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    display: none;
+  }
+}
